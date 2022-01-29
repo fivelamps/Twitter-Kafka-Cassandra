@@ -1,0 +1,23 @@
+version: "3.2"
+services:
+  kafka:
+    build: .
+    ports:
+      - "9092:9092"
+      - "8081:8081"
+      - "8082:8082"
+      - "8083:8083"
+      - "2181:2181"
+      - "3030:3030"
+      - "9581-9585:9581-9585"
+    environment:
+      - CONNECTORS=cassandra
+    volumes:
+      - ./:/external
+  cassandra:
+    image: cassandra
+    container_name: cassandra
+    depends_on: 
+    - kafka    
+    ports: 
+      - 9042:9042
