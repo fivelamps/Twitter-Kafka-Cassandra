@@ -1,6 +1,7 @@
 Projekt Twitter-Kafka-Cassandra
+===============================
 
-1. Uruchamianie
+## 1. Uruchamianie
 
    Aby zbudować i postawić obraz należy wykonać polecenie `docker-compose --build`. Jeżeli nie jest wymagana przebudowa kontenera (Dockerfile nie zmienił się), można używać polecenia `docker-compose up`.
 
@@ -8,7 +9,7 @@ Projekt Twitter-Kafka-Cassandra
 
    Aby usunąć kontenery należy wykonać `docker-compose down`.
 
-2. Opis zawartości
+## 2. Opis zawartości
 
    - docker-compose.yml
 
