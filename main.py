@@ -93,7 +93,7 @@ if __name__ == '__main__':
 
         producer.flush()
         print('Going to bed')
-        time.sleep(2)
+        time.sleep(60)
 
 
 
